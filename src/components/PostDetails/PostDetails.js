@@ -8,7 +8,7 @@ const PostDetails = () => {
         fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
         .then(res=>res.json())
         .then(data=>setPost(data))
-    },[])
+    },[id])
     return (
         <div>
             <h2><h4>id:{post.id}</h4>{post.title}</h2>
